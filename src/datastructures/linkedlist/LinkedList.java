@@ -5,6 +5,8 @@ public class LinkedList {
     Node tail;
     Long length;
 
+    public LinkedList() {
+    }
 
     public LinkedList(int value) {
         Node newNode = new Node(value);
@@ -13,25 +15,37 @@ public class LinkedList {
         length = 1L;
     }
 
-    public Node removeLast(){
-        if(length == 0) return  null;
+    public Node removeLast() {
+        if (length == 0) return null;
 
         Node pre = head;
         Node temp = head;
 
-        while(temp.next != null){
+        while (temp.next != null) {
             pre = temp;
             temp = temp.next;
         }
 
-       tail = pre;
+        tail = pre;
         tail.next = null;
         length--;
         if (length == 0) {
             head = null;
             tail = null;
         }
-        return  temp;
+        return temp;
+    }
+
+    public void prepend(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+        length++;
     }
 
     public void append(int value) {
@@ -42,8 +56,8 @@ public class LinkedList {
             tail = newNode;
 
         } else {
-           tail.next = newNode;
-           tail = newNode;
+            tail.next = newNode;
+            tail = newNode;
         }
         length++;
     }
@@ -60,9 +74,7 @@ public class LinkedList {
     public Node getHead() {
         if (head == null) {
             System.out.println("Head: null");
-        } else {
-            System.out.println("Head: " + head.value);
-        }
+        } else System.out.println("Head: " + head.value);
         return head;
     }
 
@@ -73,13 +85,42 @@ public class LinkedList {
     public void getTail() {
         if (head == null) {
             System.out.println("Tail: null");
-        } else {
-            System.out.println("Tail: " + tail.value);
-        }
+        } else System.out.println("Tail: " + tail.value);
     }
 
     public void getLength() {
         System.out.println("Length: " + length);
+    }
+
+    public Node removeFirst() {
+        if (length == 0) return null;
+
+        Node temp = head;
+        head = head.next;
+        temp.next = null;
+        length--;
+        if (length == 0) tail = null;
+        return temp;
+    }
+
+    public Node get(int index) {
+        if (length == 0) return null;
+
+        if (index == 0) return head;
+
+
+        int counter = 0;
+        Node temp = head;
+        while (temp.next != null) {
+
+            if (counter == index) return temp;
+            else {
+                counter++;
+                temp = temp.next;
+            }
+        }
+        return null;
+
     }
 
     class Node {
