@@ -31,4 +31,22 @@ class LinkedListTest {
         assertNotNull(myLinkedList);
         assertEquals(5, myLinkedList.length);
     }
+
+    @Test
+    void removeDuplicates() {
+        //Arrange
+        int[] myArray = {1,1,2,4,5};
+        myLinkedList = new LinkedList(myArray);
+
+        //Act
+        myLinkedList.printList();
+        myLinkedList.removeDuplicates();
+        myLinkedList.printList();
+        //Assert
+        assertEquals(4,myLinkedList.length);
+
+
+
+
+    }
 }

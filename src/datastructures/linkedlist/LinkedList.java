@@ -1,6 +1,8 @@
 package datastructures.linkedlist;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class LinkedList {
     Node head;
@@ -16,7 +18,8 @@ public class LinkedList {
         tail = newNode;
         length = 1;
     }
-    public LinkedList(int... myArray){
+
+    public LinkedList(int... myArray) {
         Arrays.stream(myArray).forEach(this::append);
     }
 
@@ -85,7 +88,7 @@ public class LinkedList {
         }
         if (index == length) {
             append(value);
-            return  true;
+            return true;
         }
         Node newNode = new Node(value);
         Node temp = get(index - 1);
@@ -95,7 +98,7 @@ public class LinkedList {
         return true;
     }
 
-    public  void reverse(){
+    public void reverse() {
         Node temp = head;
         head = tail;
         tail = temp;
@@ -111,7 +114,8 @@ public class LinkedList {
 
         }
     }
-    public Node findMiddleNode(){
+
+    public Node findMiddleNode() {
         Node slow = head, fast = head;
 
         while (fast != null && fast.next != null) {
@@ -122,13 +126,13 @@ public class LinkedList {
         return slow;
     }
 
-    public boolean hasLoop(){
+    public boolean hasLoop() {
         if (head == null) return false;
 
         Node slow = head, fast = head.next;
 
         while (slow != fast) {
-            if(fast == null || fast.next == null) return false;
+            if (fast == null || fast.next == null) return false;
 
             slow = slow.next;
             fast = fast.next.next;
@@ -144,12 +148,12 @@ public class LinkedList {
 
     }
 
-    public Node remove(int index){
-        if(index <0 || index >= length) return null;
-        if(index == 0) return removeFirst();
-        if(index == length -1) return removeLast();
+    public Node remove(int index) {
+        if (index < 0 || index >= length) return null;
+        if (index == 0) return removeFirst();
+        if (index == length - 1) return removeLast();
 
-        Node prev = get(index -1);
+        Node prev = get(index - 1);
         Node temp = prev.next;
         prev.next = temp.next;
         temp.next = null;
@@ -230,6 +234,7 @@ public class LinkedList {
         return false;
 
     }
+
     public void partitionList(int x) {
         if (head == null) return;
 
@@ -254,6 +259,22 @@ public class LinkedList {
         prev1.next = dummy2.next;
 
         head = dummy1.next;
+    }
+
+    public void removeDuplicates() {
+        Set<Integer> values = new HashSet<>();
+        Node previous = null;
+        Node current = head;
+        while (current != null) {
+            if (values.contains(current.value)) {
+                previous.next = current.next;
+                length -= 1;
+            } else {
+                values.add(current.value);
+                previous = current;
+            }
+            current = current.next;
+        }
     }
 
     class Node {
