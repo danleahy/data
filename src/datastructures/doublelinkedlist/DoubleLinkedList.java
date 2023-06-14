@@ -1,6 +1,4 @@
-package datastructions.doublelinkedlist;
-
-import datastructures.linkedlist.LinkedList;
+package datastructures.doublelinkedlist;
 
 import java.util.Arrays;
 
@@ -66,7 +64,7 @@ public class DoubleLinkedList {
     }
 
 
-    class Node {
+    final class Node {
 
         int value;
         Node next;
@@ -74,22 +72,6 @@ public class DoubleLinkedList {
 
         Node(int value) {
             this.value = value;
-        }
-
-        public int getValue() {
-            return value;
-        }
-
-        public void setValue(int value) {
-            this.value = value;
-        }
-
-        public Node getNext() {
-            return next;
-        }
-
-        public void setNext(Node next) {
-            this.next = next;
         }
 
     }
