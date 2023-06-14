@@ -1,4 +1,4 @@
-package datastructions.doublelinkedlist;
+package datastructures.doublelinkedlist;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -58,7 +58,7 @@ class DoubleLinkedListTest {
         DoubleLinkedList list = new DoubleLinkedList();
 
         //Act
-        DoubleLinkedList.Node lastNode = list.removeLast();
+        list.removeLast();
         //Assert
         assertEquals(0, list.length);
     }
