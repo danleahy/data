@@ -74,4 +74,43 @@ class DoubleLinkedListTest {
         assertEquals(0, list.length);
         assertEquals(1000, lastNode.value);
     }
+
+    @Test
+    void prePend() {
+
+        //Arrange
+        DoubleLinkedList list = new DoubleLinkedList(1000);
+
+        //Act
+        DoubleLinkedList.Node lastNode = list.prePend(100);
+        //Assert
+        assertEquals(2, list.length);
+        assertEquals(100, list.head.value);
+    }
+
+    @Test
+    void prePendMultiple() {
+
+        //Arrange
+        DoubleLinkedList list = new DoubleLinkedList(1000,2,3,4,5);
+
+        //Act
+        DoubleLinkedList.Node lastNode = list.prePend(100);
+        //Assert
+        assertEquals(6, list.length);
+        assertEquals(100, list.head.value);
+    }
+    @Test
+    void prePendEmptyList() {
+
+        //Arrange
+        DoubleLinkedList list = new DoubleLinkedList();
+
+        //Act
+        DoubleLinkedList.Node lastNode = list.prePend(100);
+        //Assert
+        assertEquals(1, list.length);
+        assertEquals(100, list.head.value);
+    }
+
 }

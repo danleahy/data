@@ -54,6 +54,22 @@ public class DoubleLinkedList {
         return temp;
     }
 
+    public Node prePend(int value) {
+        Node newNode = new Node(value);
+
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }
+
+        length++;
+        return newNode;
+    }
+
     public void printList() {
         System.out.println();
         Node temp = head;
