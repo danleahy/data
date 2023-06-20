@@ -54,6 +54,21 @@ public class DoubleLinkedList {
         return temp;
     }
 
+    public void removeFirst() {
+        if (length == 0) return;
+
+
+        if (length == 1) {
+            head = null;
+            tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
+        }
+        length--;
+
+    }
+
     public Node prePend(int value) {
         Node newNode = new Node(value);
 

@@ -88,6 +88,8 @@ class DoubleLinkedListTest {
         assertEquals(100, list.head.value);
     }
 
+
+
     @Test
     void prePendMultiple() {
 
@@ -113,4 +115,30 @@ class DoubleLinkedListTest {
         assertEquals(100, list.head.value);
     }
 
+    @Test
+    void removeFirst() {
+        //Arrange
+        DoubleLinkedList list = new DoubleLinkedList(1,2,4);
+
+        //Act
+        list.removeFirst();
+        //Assert
+        assertEquals(2, list.length);
+        assertEquals(2, list.head.value);
+
+    }
+
+    @Test
+    void removeFirstEmptyList() {
+        //Arrange
+        DoubleLinkedList list = new DoubleLinkedList();
+
+        //Act
+        list.removeFirst();
+        //Assert
+        assertEquals(0, list.length);
+        assertNull(list.head);
+        assertNull(list.tail);
+
+    }
 }
