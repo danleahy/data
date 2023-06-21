@@ -141,4 +141,23 @@ class DoubleLinkedListTest {
         assertNull(list.tail);
 
     }
+
+    @Test
+    void get() {
+
+        DoubleLinkedList list = new DoubleLinkedList(1,2,3,4,5,6,7,8,10);
+
+        //Act
+        DoubleLinkedList.Node node = list.get(0);
+        DoubleLinkedList.Node node1 = list.get(4);
+        DoubleLinkedList.Node node3 = list.get(8);
+        DoubleLinkedList.Node nullNode = list.get(-1);
+
+        //Assert
+        assertEquals(1, node.value);
+        assertEquals(5, node1.value);
+        assertEquals(10, node3.value);
+        assertNull(nullNode);
+
+    }
 }
