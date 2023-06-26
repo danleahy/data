@@ -160,4 +160,24 @@ class DoubleLinkedListTest {
         assertNull(nullNode);
 
     }
+
+    @Test
+    void set() {
+        //Arrange
+        DoubleLinkedList list = new DoubleLinkedList(1,2,3,4,5,6,7,8,10);
+        //Act
+        list.set(0,100);
+        //Assert
+        assertEquals(100,list.get(0).value);
+    }
+
+    @Test
+    void setInvalidIndex() {
+        //Arrange
+        DoubleLinkedList list = new DoubleLinkedList(1,2,3,4,5,6,7,8,10);
+        //Act
+        boolean isSet = list.set(-1, 100);
+        //Assert
+        assertFalse(isSet);
+    }
 }
