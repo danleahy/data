@@ -84,6 +84,7 @@ class DoublyLinkedListTest {
         //Act
         DoublyLinkedList.Node lastNode = list.prePend(100);
         //Assert
+        assertNotNull(lastNode);
         assertEquals(2, list.length);
         assertEquals(100, list.head.value);
     }
@@ -99,6 +100,7 @@ class DoublyLinkedListTest {
         //Act
         DoublyLinkedList.Node lastNode = list.prePend(100);
         //Assert
+        assertNotNull(lastNode);
         assertEquals(6, list.length);
         assertEquals(100, list.head.value);
     }
@@ -111,6 +113,7 @@ class DoublyLinkedListTest {
         //Act
         DoublyLinkedList.Node lastNode = list.prePend(100);
         //Assert
+        assertNotNull(lastNode);
         assertEquals(1, list.length);
         assertEquals(100, list.head.value);
     }
