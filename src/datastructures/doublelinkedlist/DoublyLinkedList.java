@@ -2,14 +2,14 @@ package datastructures.doublelinkedlist;
 
 import java.util.Arrays;
 
-public class DoubleLinkedList {
+public class DoublyLinkedList {
 
     int length;
 
     Node head;
     Node tail;
 
-    public DoubleLinkedList(int value) {
+    public DoublyLinkedList(int value) {
         Node newNode = new Node(value);
         head = newNode;
         tail = newNode;
@@ -17,7 +17,7 @@ public class DoubleLinkedList {
     }
 
 
-    public DoubleLinkedList(int... myArray) {
+    public DoublyLinkedList(int... myArray) {
         Arrays.stream(myArray).forEach(this::append);
     }
 
@@ -34,6 +34,58 @@ public class DoubleLinkedList {
             tail = newNode;
         }
         length++;
+    }
+
+    public boolean insert(int index, int value) {
+        if (index < 0 || index >= length) return false;
+
+
+        if (index == 0) {
+            prePend(value);
+            return true;
+        }
+
+        if (index == length - 1) {
+            append(value);
+            return true;
+        }
+
+        Node newNode = new Node(value);
+        Node current = get(index);
+
+        Node before = get(index - 1);
+        Node after = before.next;
+
+        newNode.next = after;
+        after.prev = newNode;
+        newNode.prev = before;
+        before.next = newNode;
+
+        length++;
+        return true;
+    }
+
+    public Node remove(int index) {
+        if (index < 0 || index >= length) return null;
+
+        if (index == 0 ) return removeFirst();
+
+        if (index == length - 1) return removeLast();
+
+
+        Node temp = get(index);
+        Node before = temp.prev;
+        Node after = temp.next;
+
+        if (before != null) {
+            before.next = after;
+        }
+        if (after != null) {
+            after.prev = before;
+        }
+
+        length--;
+        return temp;
     }
 
     public Node get(int index) {
@@ -84,8 +136,10 @@ public class DoubleLinkedList {
         return temp;
     }
 
-    public void removeFirst() {
-        if (length == 0) return;
+    public Node removeFirst() {
+        if (length == 0) return null;
+
+        Node temp = head;
 
 
         if (length == 1) {
@@ -96,6 +150,7 @@ public class DoubleLinkedList {
             head.prev = null;
         }
         length--;
+        return temp;
 
     }
 
