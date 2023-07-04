@@ -51,7 +51,6 @@ public class DoublyLinkedList {
         }
 
         Node newNode = new Node(value);
-        Node current = get(index);
 
         Node before = get(index - 1);
         Node after = before.next;
