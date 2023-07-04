@@ -5,14 +5,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DoubleLinkedListTest {
+class DoublyLinkedListTest {
 
-    DoubleLinkedList list;
+    DoublyLinkedList list;
 
     @BeforeEach
     void setUp() {
 
-        list = new DoubleLinkedList(5);
+        list = new DoublyLinkedList(5);
     }
 
     @Test
@@ -28,7 +28,7 @@ class DoubleLinkedListTest {
     @Test
     void appendArray() {
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList(2,3,4);
+        DoublyLinkedList list = new DoublyLinkedList(2,3,4);
 
         list.printList();
         //Act
@@ -41,11 +41,11 @@ class DoubleLinkedListTest {
     @Test
     void removeLast() {
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList(2,3,4);
+        DoublyLinkedList list = new DoublyLinkedList(2,3,4);
 
         list.printList();
         //Act
-        DoubleLinkedList.Node lastNode = list.removeLast();
+        DoublyLinkedList.Node lastNode = list.removeLast();
         System.out.println(lastNode);
         //Assert
         assertEquals(2, list.length);
@@ -55,7 +55,7 @@ class DoubleLinkedListTest {
     @Test
     void removeLastNull() {
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList();
+        DoublyLinkedList list = new DoublyLinkedList();
 
         //Act
         list.removeLast();
@@ -66,10 +66,10 @@ class DoubleLinkedListTest {
     @Test
     void removeLastNodeOnceItem() {
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList(1000);
+        DoublyLinkedList list = new DoublyLinkedList(1000);
 
         //Act
-        DoubleLinkedList.Node lastNode = list.removeLast();
+        DoublyLinkedList.Node lastNode = list.removeLast();
         //Assert
         assertEquals(0, list.length);
         assertEquals(1000, lastNode.value);
@@ -79,10 +79,10 @@ class DoubleLinkedListTest {
     void prePend() {
 
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList(1000);
+        DoublyLinkedList list = new DoublyLinkedList(1000);
 
         //Act
-        DoubleLinkedList.Node lastNode = list.prePend(100);
+        DoublyLinkedList.Node lastNode = list.prePend(100);
         //Assert
         assertEquals(2, list.length);
         assertEquals(100, list.head.value);
@@ -94,10 +94,10 @@ class DoubleLinkedListTest {
     void prePendMultiple() {
 
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList(1000,2,3,4,5);
+        DoublyLinkedList list = new DoublyLinkedList(1000,2,3,4,5);
 
         //Act
-        DoubleLinkedList.Node lastNode = list.prePend(100);
+        DoublyLinkedList.Node lastNode = list.prePend(100);
         //Assert
         assertEquals(6, list.length);
         assertEquals(100, list.head.value);
@@ -106,10 +106,10 @@ class DoubleLinkedListTest {
     void prePendEmptyList() {
 
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList();
+        DoublyLinkedList list = new DoublyLinkedList();
 
         //Act
-        DoubleLinkedList.Node lastNode = list.prePend(100);
+        DoublyLinkedList.Node lastNode = list.prePend(100);
         //Assert
         assertEquals(1, list.length);
         assertEquals(100, list.head.value);
@@ -118,7 +118,7 @@ class DoubleLinkedListTest {
     @Test
     void removeFirst() {
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList(1,2,4);
+        DoublyLinkedList list = new DoublyLinkedList(1,2,4);
 
         //Act
         list.removeFirst();
@@ -131,7 +131,7 @@ class DoubleLinkedListTest {
     @Test
     void removeFirstEmptyList() {
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList();
+        DoublyLinkedList list = new DoublyLinkedList();
 
         //Act
         list.removeFirst();
@@ -145,13 +145,13 @@ class DoubleLinkedListTest {
     @Test
     void get() {
 
-        DoubleLinkedList list = new DoubleLinkedList(1,2,3,4,5,6,7,8,10);
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3,4,5,6,7,8,10);
 
         //Act
-        DoubleLinkedList.Node node = list.get(0);
-        DoubleLinkedList.Node node1 = list.get(4);
-        DoubleLinkedList.Node node3 = list.get(8);
-        DoubleLinkedList.Node nullNode = list.get(-1);
+        DoublyLinkedList.Node node = list.get(0);
+        DoublyLinkedList.Node node1 = list.get(4);
+        DoublyLinkedList.Node node3 = list.get(8);
+        DoublyLinkedList.Node nullNode = list.get(-1);
 
         //Assert
         assertEquals(1, node.value);
@@ -164,7 +164,7 @@ class DoubleLinkedListTest {
     @Test
     void set() {
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList(1,2,3,4,5,6,7,8,10);
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3,4,5,6,7,8,10);
         //Act
         list.set(0,100);
         //Assert
@@ -174,10 +174,57 @@ class DoubleLinkedListTest {
     @Test
     void setInvalidIndex() {
         //Arrange
-        DoubleLinkedList list = new DoubleLinkedList(1,2,3,4,5,6,7,8,10);
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3,4,5,6,7,8,10);
         //Act
         boolean isSet = list.set(-1, 100);
         //Assert
         assertFalse(isSet);
+    }
+
+    @Test
+    void insert() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3,4);
+
+        //Act
+        boolean inserted = list.insert(0,-99);
+        //Assert
+        assertTrue(inserted);
+        assertEquals(-99,list.get(0).value);
+
+    }
+
+    @Test
+    void insertNon0Index() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3,4);
+
+        //Act
+        boolean inserted = list.insert(1,-99);
+        //Assert
+        assertTrue(inserted);
+        assertEquals(-99,list.get(1).value);
+
+    }
+
+    @Test
+    void remove() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3,4,5);
+        //Act
+        DoublyLinkedList.Node removedNode = list.remove(4);
+        //Assert
+        assertEquals(5,removedNode.value);
+        assertEquals(4,list.length);
+    }
+
+    @Test
+    void printList() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3);
+        //Act
+        list.printList();
+        //Assert
+        assertTrue(true);
     }
 }
