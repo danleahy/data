@@ -21,6 +21,22 @@ public class DoublyLinkedList {
         Arrays.stream(myArray).forEach(this::append);
     }
 
+    public void reverse() {
+        Node current = head;
+        Node temp = null;
+
+        while (current != null) {
+            temp = current.prev;
+            current.prev = current.next;
+            current.next = temp;
+            current = current.prev;
+        }
+
+        temp = head;
+        head = tail;
+        tail = temp;
+    }
+
     public void append(int value) {
         Node newNode = new Node(value);
 
@@ -34,6 +50,16 @@ public class DoublyLinkedList {
             tail = newNode;
         }
         length++;
+    }
+
+    public void swapFirstLast() {
+        if (length <= 1) return;
+
+        int tempTail = tail.value;
+        int tempHead = head.value;
+
+        head.value = tempTail;
+        tail.value = tempHead;
     }
 
     public boolean insert(int index, int value) {
@@ -67,7 +93,7 @@ public class DoublyLinkedList {
     public Node remove(int index) {
         if (index < 0 || index >= length) return null;
 
-        if (index == 0 ) return removeFirst();
+        if (index == 0) return removeFirst();
 
         if (index == length - 1) return removeLast();
 
