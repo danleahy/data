@@ -23,7 +23,7 @@ public class DoublyLinkedList {
 
     public void reverse() {
         Node current = head;
-        Node temp = null;
+        Node temp;
 
         while (current != null) {
             temp = current.prev;
