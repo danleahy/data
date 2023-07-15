@@ -230,4 +230,48 @@ class DoublyLinkedListTest {
         //Assert
         assertTrue(true);
     }
+
+    @Test
+    void swapFirstLast() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3);
+        //Act
+        list.swapFirstLast();
+        //Assert
+        assertEquals(3, list.head.value);
+        assertEquals(1, list.tail.value);
+    }
+
+    @Test
+    void swapFirstLastNoValue() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList();
+        //Act
+        list.swapFirstLast();
+        //Assert
+        assertEquals(0, list.length);
+    }
+
+    @Test
+    void swapFirstLast1Value() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList(1);
+        //Act
+        list.swapFirstLast();
+        //Assert
+        assertEquals(1, list.head.value);
+        assertEquals(1, list.tail.value);
+    }
+
+    @Test
+    void reverse() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3);
+        //Act
+        list.reverse();
+        //Assert
+        assertEquals(3, list.head.value);
+        assertEquals(1, list.tail.value);
+
+    }
 }
