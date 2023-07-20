@@ -274,4 +274,25 @@ class DoublyLinkedListTest {
         assertEquals(1, list.tail.value);
 
     }
+
+    @Test
+    void isPalindrome() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList(1,2,3);
+        //Act
+        boolean isPalindrome = list.isPalindrome();
+        //Assert
+        assertFalse(isPalindrome);
+    }
+
+
+    @Test
+    void isPalindromeTrue() {
+        //Arrange
+        DoublyLinkedList list = new DoublyLinkedList(1,2,2,1);
+        //Act
+        boolean isPalindrome = list.isPalindrome();
+        //Assert
+        assertTrue(isPalindrome);
+    }
 }
