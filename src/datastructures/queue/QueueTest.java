@@ -13,8 +13,9 @@ class QueueTest {
 
     @Test
     void testSetup(){
-        System.out.println(queue.getFirst());
-        System.out.println(queue.getLast());
+        System.out.println("First: " + queue.getFirst());
+        System.out.println("Last: " + queue.getLast());
+        System.out.println("Length: " + queue.getLength());
         queue.printQueue();
     }
 }
