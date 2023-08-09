@@ -40,4 +40,11 @@ public class StackArrayList<T> {
         stackList.add(value);
     }
 
+    public T pop(){
+        if(isEmpty()) return null;
+
+        return stackList.remove(stackList.size()-1);
+
+    }
+
 }

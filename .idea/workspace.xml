@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1905fd53-25cb-493e-94e5-12c59f88f3a7" name="Changes" comment="tests updated for length last and first of queue">
-      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/StackArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/StackArrayListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1905fd53-25cb-493e-94e5-12c59f88f3a7" name="Changes" comment="added stack implementation using Array List">
+      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/stack/StackArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/stack/StackArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/stack/StackArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/stack/StackArrayListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,7 +70,7 @@
       <recent name="datastructures.queue" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StackArrayListTest">
+  <component name="RunManager" selected="JUnit.StackArrayListTest.pop">
     <configuration name="QueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <extension name="coverage">
@@ -86,22 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QueueTest.testSetup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="datastructures.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="datastructures.queue" />
-      <option name="MAIN_CLASS_NAME" value="datastructures.queue.QueueTest" />
-      <option name="METHOD_NAME" value="testSetup" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StackArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <extension name="coverage">
@@ -113,6 +97,22 @@
       <option name="PACKAGE_NAME" value="datastructures.stack" />
       <option name="MAIN_CLASS_NAME" value="datastructures.stack.StackArrayListTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackArrayListTest.pop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructures.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datastructures.stack" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.stack.StackArrayListTest" />
+      <option name="METHOD_NAME" value="pop" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StackArrayListTest.pop" />
         <item itemvalue="JUnit.StackArrayListTest" />
         <item itemvalue="JUnit.StackArrayListTest.push" />
         <item itemvalue="JUnit.StackArrayListTest.printStack2" />
         <item itemvalue="JUnit.QueueTest" />
-        <item itemvalue="JUnit.QueueTest.testSetup" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +171,7 @@
       <workItem from="1691337840129" duration="95000" />
       <workItem from="1691352030802" duration="732000" />
       <workItem from="1691526270640" duration="312000" />
-      <workItem from="1691611039012" duration="1101000" />
+      <workItem from="1691611039012" duration="2632000" />
     </task>
     <task id="LOCAL-00001" summary="fixing git issues">
       <option name="closed" value="true" />
@@ -213,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691337235297</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added stack implementation using Array List">
+      <option name="closed" value="true" />
+      <created>1691612419347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691612419347</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +233,8 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="utility methods added" />
     <MESSAGE value="tests updated for length last and first of queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests updated for length last and first of queue" />
+    <MESSAGE value="added stack implementation using Array List" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stack implementation using Array List" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DataStructures$QueueTest.ic" NAME="QueueTest Coverage Results" MODIFIED="1691337263890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
