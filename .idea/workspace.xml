@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1905fd53-25cb-493e-94e5-12c59f88f3a7" name="Changes" comment="added stack implementation using Array List">
-      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/Main.java" afterDir="false" />
+    <list default="true" id="1905fd53-25cb-493e-94e5-12c59f88f3a7" name="Changes" comment="leetcode interview questions">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/hashtables/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/hashtables/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/set/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/balanceParenthis/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/sortedStack/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/sortedStack/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/sortedStack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/tree/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/stack/StackArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/stack/StackArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/stack/StackArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/stack/StackArrayListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/stack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/reverseString/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +39,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2TcHyQUKAOV3okHU5pXvjqMRKWS" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -47,17 +57,18 @@
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/doubleLinkedList&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/tutorials/java/algo/DataStructures&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/touchapps/touchapps-demo&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AtomSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -66,84 +77,83 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="datastructures.tree" />
       <recent name="datastructures.stack" />
       <recent name="datastructures.queue" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StackArrayListTest.pop">
-    <configuration name="QueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.datastructures.set.Main">
+    <configuration name="datastructures.set.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastructures.set.Main" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datastructures.queue.*" />
+          <option name="PATTERN" value="datastructures.set.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="datastructures.queue" />
-      <option name="MAIN_CLASS_NAME" value="datastructures.queue.QueueTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructures.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datastructures.tree" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.tree.BinarySearchTreeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest.contains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datastructures.stack.*" />
+          <option name="PATTERN" value="datastructures.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="datastructures.stack" />
-      <option name="MAIN_CLASS_NAME" value="datastructures.stack.StackArrayListTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StackArrayListTest.pop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="datastructures.stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="datastructures.stack" />
-      <option name="MAIN_CLASS_NAME" value="datastructures.stack.StackArrayListTest" />
-      <option name="METHOD_NAME" value="pop" />
+      <option name="PACKAGE_NAME" value="datastructures.tree" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.tree.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="contains" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackArrayListTest.printStack2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest.insertMany" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datastructures.stack.*" />
+          <option name="PATTERN" value="datastructures.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="datastructures.stack" />
-      <option name="MAIN_CLASS_NAME" value="datastructures.stack.StackArrayListTest" />
-      <option name="METHOD_NAME" value="printStack2" />
+      <option name="PACKAGE_NAME" value="datastructures.tree" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.tree.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="insertMany" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackArrayListTest.push" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest.insertManyRootTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datastructures.stack.*" />
+          <option name="PATTERN" value="datastructures.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="datastructures.stack" />
-      <option name="MAIN_CLASS_NAME" value="datastructures.stack.StackArrayListTest" />
-      <option name="METHOD_NAME" value="push" />
+      <option name="PACKAGE_NAME" value="datastructures.tree" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.tree.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="insertManyRootTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StackArrayListTest.pop" />
-        <item itemvalue="JUnit.StackArrayListTest" />
-        <item itemvalue="JUnit.StackArrayListTest.push" />
-        <item itemvalue="JUnit.StackArrayListTest.printStack2" />
-        <item itemvalue="JUnit.QueueTest" />
+        <item itemvalue="Application.datastructures.set.Main" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.insertMany" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.insertManyRootTest" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.contains" />
+        <item itemvalue="JUnit.BinarySearchTreeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +181,23 @@
       <workItem from="1691337840129" duration="95000" />
       <workItem from="1691352030802" duration="732000" />
       <workItem from="1691526270640" duration="312000" />
-      <workItem from="1691611039012" duration="2632000" />
+      <workItem from="1691611039012" duration="2765000" />
+      <workItem from="1691932278666" duration="3609000" />
+      <workItem from="1692129122155" duration="2411000" />
+      <workItem from="1692131578231" duration="364000" />
+      <workItem from="1693338346973" duration="1639000" />
+      <workItem from="1693597355056" duration="829000" />
+      <workItem from="1694032448999" duration="1580000" />
+      <workItem from="1694351343032" duration="6153000" />
+      <workItem from="1694362054731" duration="170000" />
+      <workItem from="1694373794338" duration="2479000" />
+      <workItem from="1694461604419" duration="1926000" />
+      <workItem from="1694716881296" duration="2318000" />
+      <workItem from="1694719249851" duration="1032000" />
+      <workItem from="1694805601448" duration="4717000" />
+      <workItem from="1694950405337" duration="2074000" />
+      <workItem from="1695064100442" duration="169000" />
+      <workItem from="1695064299845" duration="2944000" />
     </task>
     <task id="LOCAL-00001" summary="fixing git issues">
       <option name="closed" value="true" />
@@ -221,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691612419347</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="leetcode interview questions">
+      <option name="closed" value="true" />
+      <created>1691613824357</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691613824357</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +268,52 @@
     <MESSAGE value="utility methods added" />
     <MESSAGE value="tests updated for length last and first of queue" />
     <MESSAGE value="added stack implementation using Array List" />
-    <option name="LAST_COMMIT_MESSAGE" value="added stack implementation using Array List" />
+    <MESSAGE value="leetcode interview questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode interview questions" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/stack/leetcode/sortedStack/Main.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/stack/leetcode/sortedStack/Main.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/tree/BinarySearchTreeTest.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/hashtables/Main.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/set/Main.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/set/Main.java</url>
+          <line>81</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="additionalStack" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DataStructures$QueueTest.ic" NAME="QueueTest Coverage Results" MODIFIED="1691337263890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
