@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1905fd53-25cb-493e-94e5-12c59f88f3a7" name="Changes" comment="leetcode interview questions">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/hashtables/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/hashtables/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/set/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/balanceParenthis/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/sortedStack/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/sortedStack/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/sortedStack/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/tree/Main.java" afterDir="false" />
+    <list default="true" id="1905fd53-25cb-493e-94e5-12c59f88f3a7" name="Changes" comment=" hashtable, set, trees">
+      <change afterPath="$PROJECT_DIR$/src/datastructures/graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/graph/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/heap/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/heap/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/stack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/stack/leetcode/reverseString/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,28 +41,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/doubleLinkedList&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/touchapps/touchapps-demo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "feature/doubleLinkedList",
+    "last_opened_file_path": "D:/Projects/touchapps/touchapps-demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -82,7 +74,20 @@
       <recent name="datastructures.queue" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.datastructures.set.Main">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastructures.graph.Main" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructures.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="datastructures.set.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="datastructures.set.Main" />
       <module name="DataStructures" />
@@ -92,21 +97,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="datastructures.tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="datastructures.tree" />
-      <option name="MAIN_CLASS_NAME" value="datastructures.tree.BinarySearchTreeTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.datastructures.set.Main" />
         <item itemvalue="JUnit.BinarySearchTreeTest.insertMany" />
         <item itemvalue="JUnit.BinarySearchTreeTest.insertManyRootTest" />
         <item itemvalue="JUnit.BinarySearchTreeTest.contains" />
-        <item itemvalue="JUnit.BinarySearchTreeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +187,9 @@
       <workItem from="1694805601448" duration="4717000" />
       <workItem from="1694950405337" duration="2074000" />
       <workItem from="1695064100442" duration="169000" />
-      <workItem from="1695064299845" duration="2944000" />
+      <workItem from="1695064299845" duration="3291000" />
+      <workItem from="1695410787109" duration="618000" />
+      <workItem from="1695563642715" duration="6286000" />
     </task>
     <task id="LOCAL-00001" summary="fixing git issues">
       <option name="closed" value="true" />
@@ -255,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691613824357</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=" hashtable, set, trees">
+      <option name="closed" value="true" />
+      <created>1695068722564</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695068722564</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +269,8 @@
     <MESSAGE value="tests updated for length last and first of queue" />
     <MESSAGE value="added stack implementation using Array List" />
     <MESSAGE value="leetcode interview questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode interview questions" />
+    <MESSAGE value=" hashtable, set, trees" />
+    <option name="LAST_COMMIT_MESSAGE" value=" hashtable, set, trees" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
