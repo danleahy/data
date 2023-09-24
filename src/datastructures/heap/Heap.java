@@ -41,6 +41,8 @@ public class Heap {
     }
 
     private void swap(int index1, int index2){
-        int temp =
+        int temp = heap.get(index1);
+        heap.set(index1,heap.get(index2));
+        heap.set(index2,temp);
     }
 }
