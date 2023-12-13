@@ -3,6 +3,7 @@ package datastructures.tree;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class BinarySearchTree {
     Node root;
@@ -12,13 +13,43 @@ public class BinarySearchTree {
         rInsert(root, value);
     }
 
-    public ArrayList<Integer> DPSPreOrder(){
+    public ArrayList<Integer> DFSPreOrder(){
         ArrayList<Integer>  results = new ArrayList<>();
 
         class Traverse {
             Traverse(Node currentNode)  {
                 results.add(currentNode.value);
                 if (currentNode.left != null) new Traverse(currentNode.left);
+                if (currentNode.right != null) new Traverse(currentNode.right);
+            }
+        }
+
+        new Traverse(root);
+        return results;
+    }
+
+    public ArrayList<Integer> DFSPostOrder(){
+        ArrayList<Integer>  results = new ArrayList<>();
+
+        class Traverse {
+            Traverse(Node currentNode)  {
+                if (currentNode.left != null) new Traverse(currentNode.left);
+                if (currentNode.right != null) new Traverse(currentNode.right);
+                results.add(currentNode.value);
+            }
+        }
+
+        new Traverse(root);
+        return results;
+    }
+
+    public ArrayList<Integer> DFSInOrder(){
+        ArrayList<Integer>  results = new ArrayList<>();
+
+        class Traverse {
+            Traverse(Node currentNode)  {
+                if (currentNode.left != null) new Traverse(currentNode.left);
+                results.add(currentNode.value);
                 if (currentNode.right != null) new Traverse(currentNode.right);
             }
         }
@@ -102,6 +133,25 @@ public class BinarySearchTree {
 
     public void deleteNode(int value){
         deleteNode(root,value);
+    }
+
+    public Integer kthSmallest(int k) {
+        Stack<Node> stack = new Stack<>();
+        Node node = this.root;
+
+        while (!stack.isEmpty() || node != null) {
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
+            }
+            node = stack.pop();
+            k -= 1;
+            if (k == 0) {
+                return node.value;
+            }
+            node = node.right;
+        }
+        return null;
     }
 
     private Node deleteNode(Node currentNode, int value) {
