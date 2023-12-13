@@ -3,10 +3,14 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BookmarksViewState">
+    <option name="rewriteBookmarkType" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1905fd53-25cb-493e-94e5-12c59f88f3a7" name="Changes" comment="sinkdown method added&#10;used for fixing the right location within the &#10;&#10;bst contains method updated to use recursion&#10;&#10;Factorial class added">
+    <list default="true" id="1905fd53-25cb-493e-94e5-12c59f88f3a7" name="Changes" comment="unused imports removed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTreeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/datastructures/tree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/tree/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,29 +43,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/doubleLinkedList&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/cortexanalytics&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BinarySearchTreeTest.insertManyRootTest.executor": "Run",
+    "JUnit.BinarySearchTreeTest.kthSmallest.executor": "Run",
+    "Java Scratch.Scratch.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "feature/doubleLinkedList",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Projects/cortexanalytics",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -72,7 +87,7 @@
       <recent name="datastructures.queue" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BinarySearchTreeTest.kthSmallest">
     <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="datastructures.factorial.Factorial" />
       <module name="DataStructures" />
@@ -82,13 +97,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="DataStructures" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,20 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="datastructures.heap.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastructures.heap.Main" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="datastructures.heap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchTreeTest.insertMany" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest.insertManyRootTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
@@ -129,19 +124,42 @@
       </extension>
       <option name="PACKAGE_NAME" value="datastructures.tree" />
       <option name="MAIN_CLASS_NAME" value="datastructures.tree.BinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="insertMany" />
+      <option name="METHOD_NAME" value="insertManyRootTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.kthSmallest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructures.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datastructures.tree" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.tree.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="kthSmallest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinarySearchTreeTest.kthSmallest" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.insertManyRootTest" />
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Factorial" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.datastructures.heap.Main" />
-        <item itemvalue="JUnit.BinarySearchTreeTest.insertMany" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +207,17 @@
       <workItem from="1698585229571" duration="5205000" />
       <workItem from="1699182869015" duration="4117000" />
       <workItem from="1699482666110" duration="1985000" />
+      <workItem from="1699751334296" duration="298000" />
+      <workItem from="1699751694686" duration="95000" />
+      <workItem from="1699914393958" duration="1758000" />
+      <workItem from="1701303147143" duration="726000" />
+      <workItem from="1701525457059" duration="1161000" />
+      <workItem from="1701528089760" duration="2773000" />
+      <workItem from="1702242867716" duration="620000" />
+      <workItem from="1702375064724" duration="2014000" />
+      <workItem from="1702397071219" duration="4635000" />
+      <workItem from="1702411527458" duration="101000" />
+      <workItem from="1702468248250" duration="2649000" />
     </task>
     <task id="LOCAL-00001" summary="fixing git issues">
       <option name="closed" value="true" />
@@ -286,11 +315,38 @@
       <option name="project" value="LOCAL" />
       <updated>1698598568507</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="minValue and rInsert methods added&#10;&#10;BFS and DPSPreOrder methods added">
+      <option name="closed" value="true" />
+      <created>1699751517896</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699751517897</updated>
+    </task>
+    <task id="LOCAL-00014" summary="unused imports removed">
+      <option name="closed" value="true" />
+      <created>1699751626928</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699751626928</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixing git issues" />
@@ -304,7 +360,9 @@
     <MESSAGE value="graph and heap added" />
     <MESSAGE value="sinkdown method added&#10;used for fixing the right location within the &#10;&#10;bst contains method updated to use recursion" />
     <MESSAGE value="sinkdown method added&#10;used for fixing the right location within the &#10;&#10;bst contains method updated to use recursion&#10;&#10;Factorial class added" />
-    <option name="LAST_COMMIT_MESSAGE" value="sinkdown method added&#10;used for fixing the right location within the &#10;&#10;bst contains method updated to use recursion&#10;&#10;Factorial class added" />
+    <MESSAGE value="minValue and rInsert methods added&#10;&#10;BFS and DPSPreOrder methods added" />
+    <MESSAGE value="unused imports removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="unused imports removed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -321,7 +379,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/datastructures/tree/BinarySearchTreeTest.java</url>
-          <line>36</line>
+          <line>38</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -352,6 +410,21 @@
           <line>33</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/tree/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/tree/Main.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/tree/BinarySearchTree.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -359,6 +432,10 @@
         <watch expression="additionalStack" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DataStructures$QueueTest.ic" NAME="QueueTest Coverage Results" MODIFIED="1691337263890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

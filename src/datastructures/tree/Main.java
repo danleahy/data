@@ -15,12 +15,14 @@ public class Main {
 
 //        System.out.println(binarySearchTree.root);
 
-        System.out.println(binarySearchTree.contains(83));
-        System.out.println(binarySearchTree.rContains(27));
-        binarySearchTree.deleteNode(27);
-        System.out.println(binarySearchTree.rContains(27));
+//        System.out.println(binarySearchTree.contains(83));
+//        System.out.println(binarySearchTree.rContains(27));
+//        binarySearchTree.deleteNode(27);
+//        System.out.println(binarySearchTree.rContains(27));
 
         System.out.println("Breath first Order" + binarySearchTree.BFS());
-        System.out.println("PreOrder" + binarySearchTree.DPSPreOrder());
+//        System.out.println("PreOrder" + binarySearchTree.DPSPreOrder());
+//        System.out.println("PreOrder" + binarySearchTree.DPSPostOrder());
+//        System.out.println("PreOrder" + binarySearchTree.DPSInOrder());
     }
 }
