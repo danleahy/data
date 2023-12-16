@@ -30,7 +30,6 @@ public class SelectionSort {
         int[] array  = {30,45,1,3,90};
 
         selectionSort(array);
-
         System.out.println(Arrays.toString(array));
     }
 }
