@@ -34,14 +34,25 @@ class LinkedListTest {
     void selectionSort() {
         //Arrange
         linkedList = new LinkedList(4);
-//        linkedList.append(3);
-//        linkedList.append(2);
-//        linkedList.append(1);
         linkedList.append(8);
         linkedList.append(7);
         linkedList.append(6);
         //Act
         linkedList.selectionSort();
+        //Assert
+
+        linkedList.printList();
+    }
+
+    @Test
+    void insertionSort() {
+        //Arrange
+        linkedList = new LinkedList(4);
+        linkedList.append(8);
+        linkedList.append(7);
+        linkedList.append(6);
+        //Act
+        linkedList.insertionSort();
         //Assert
 
         linkedList.printList();
