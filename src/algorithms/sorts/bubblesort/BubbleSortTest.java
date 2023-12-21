@@ -3,6 +3,8 @@ package algorithms.sorts.bubblesort;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class BubbleSortTest {
@@ -17,7 +19,7 @@ class BubbleSortTest {
 
         BubbleSort.bubbleSort(array);
 
-        System.out.println(array);
+        System.out.println(Arrays.toString(array));
 
         int[] expected = {3, 10, 40, 50, 202};
         assertArrayEquals(expected, array);
