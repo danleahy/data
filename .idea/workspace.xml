@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afe5efec-6bfa-4829-8d48-d11412f7322c" name="Changes" comment="misc string change&#10;workspace updated itself after refactor">
-      <change afterPath="$PROJECT_DIR$/src/algorithms/sorts/bubblesort/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithms/sorts/bubblesort/BubbleSortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithms/sorts/mergesort/MergeSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/MergeSort.java" beforeDir="false" />
-    </list>
+    <list default="true" id="afe5efec-6bfa-4829-8d48-d11412f7322c" name="Changes" comment="adding back in sorting classes that were deleted accidentally" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +51,7 @@
     "JUnit.BubbleSortTest.bubbleSort.executor": "Run",
     "JUnit.BubbleSortTest.executor": "Run",
     "JUnit.MergeSortTest.mergeTest.executor": "Run",
+    "JUnit.SelectionSortTest.selectionSort.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -80,6 +75,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="algorithms.sorts.selectionsort" />
+      <recent name="algorithms.sorts.insertionsort" />
       <recent name="algorithms.sorts.bubblesort" />
       <recent name="algorithms.sorts.mergesort" />
     </key>
@@ -204,7 +201,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703181105998</updated>
-      <workItem from="1703181108949" duration="1596000" />
+      <workItem from="1703181108949" duration="2040000" />
     </task>
     <task id="LOCAL-00001" summary="fixing up merge conflict issues">
       <option name="closed" value="true" />
@@ -238,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703182051830</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding back in sorting classes that were deleted accidentally">
+      <option name="closed" value="true" />
+      <created>1703183552114</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703183552114</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +263,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixing up merge conflict issues" />
     <MESSAGE value="misc string change&#10;workspace updated itself after refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="misc string change&#10;workspace updated itself after refactor" />
+    <MESSAGE value="adding back in sorting classes that were deleted accidentally" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding back in sorting classes that were deleted accidentally" />
   </component>
 </project>
