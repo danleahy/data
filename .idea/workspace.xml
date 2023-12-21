@@ -8,15 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1905fd53-25cb-493e-94e5-12c59f88f3a7" name="Changes" comment="unused imports removed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/tree/BinarySearchTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/tree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/tree/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/InsertionSort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/insertionsort/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/InsertionSort/InsertionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/insertionsort/InsertionSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/mergesort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/SelectionSort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/selectionsort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/SelectionSort/SelectionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/selectionsort/SelectionSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -31,6 +35,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Merge sort added" />
+        <option name="rewordedMessage" value="Merge sort added&#10;&#10;Linked list added with multiple sorting algorithms added&#10;&#10;bubble sort&#10;selection sort&#10;insertion sort" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="f377212772d66eb0402c0b365aca0014fde92b87" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -60,7 +77,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "feature/doubleLinkedList",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Projects/cortexanalytics",
     "node.js.detected.package.eslint": "true",

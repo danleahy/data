@@ -1,9 +1,7 @@
-package algorithms.sorts.BubbleSort;
+package algorithms.sorts.bubblesort;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
