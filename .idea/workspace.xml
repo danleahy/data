@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe5efec-6bfa-4829-8d48-d11412f7322c" name="Changes" comment="fixing up merge conflict issues">
-      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/BubbleSort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/BubbleSort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/BubbleSort/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/BubbleSort/BubbleSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/InsertionSort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/InsertionSort/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/InsertionSort/InsertionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/InsertionSort/InsertionSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/SelectionSort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/SelectionSort/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/SelectionSort/SelectionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorts/SelectionSort/SelectionSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/bubblesort/BubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/bubblesort/BubbleSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/insertionsort/InsertionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/insertionsort/InsertionSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/selectionsort/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorts/selectionsort/SelectionSortTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BubbleSortTest.bubbleSort.executor": "Run",
     "JUnit.BubbleSortTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -137,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703181105998</updated>
-      <workItem from="1703181108949" duration="318000" />
+      <workItem from="1703181108949" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="fixing up merge conflict issues">
       <option name="closed" value="true" />
@@ -147,11 +148,30 @@
       <option name="project" value="LOCAL" />
       <updated>1703181332068</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixing up merge conflict issues">
+      <option name="closed" value="true" />
+      <created>1703181466314</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703181466314</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixing up merge conflict issues" />
