@@ -1,6 +1,16 @@
-# data structures and algorithms 
+# Data structures and algorithms 
 
-## Experimenting with different datastructures, lists, hashmaps, Binary Search Trees and 
+## Datastructures
 
-sorting algorithms such bubble sort
+* lists
+* hashmaps
+* trees
+  * binary search tree      
+
+# Sorting algorithms 
+
+* bubble sort
+* selection sort
+* insertion sort
+* merge sort
 
