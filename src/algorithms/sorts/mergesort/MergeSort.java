@@ -1,5 +1,7 @@
 package algorithms.sorts.mergesort;
 
+import java.util.Arrays;
+
 public class MergeSort {
 
     public static int[] mergeSort(int[] array) {
